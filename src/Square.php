@@ -36,6 +36,6 @@ class Square implements CalculatorInterface
             throw new Exception('Arguments a must be greater than 0');
         }
 
-        return $this->a^2;
+        return $this->a * $this->a;
     }
 }

@@ -18,8 +18,8 @@ class SquareTest extends TestCase
      */
     public function calcGood(): void
     {
-        $square = new Square(9.4);
-        $this->assertEquals(9.4^2, $square->calc());
+        $square = new Square(10.15);
+        $this->assertEquals(10.15 * 10.15, $square->calc());
     }
     /**
      * @test
@@ -27,7 +27,7 @@ class SquareTest extends TestCase
      */
     public function exceptionMinusArgs(): void
     {
-        $square = new Square(-9.4);
+        $square = new Square(-10.15);
         $this->expectException(Exception::class);
         $square->calc();
     }
