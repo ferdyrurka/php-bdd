@@ -1,6 +1,6 @@
 {
   "require": {
-    "php": "7.3.*"
+    "php": "7.*.*"
   },
   "require-dev": {
     "behat/behat": "3.5.*",
