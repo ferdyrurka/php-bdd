@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 /**
  * Class SquareContext
  */
-class FutureContext implements Context
+class FeatureContext implements Context
 {
     /**
      * @var Square
