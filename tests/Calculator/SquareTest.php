@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace App\Test;
+namespace App\Test\Calculator;
 
 use App\Square;
 use PHPUnit\Framework\TestCase;
