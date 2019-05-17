@@ -1,10 +1,11 @@
 <?php
 
+namespace Feature\Calculator;
+
 use Behat\Behat\Context\Context;
-use Behat\Gherkin\Node\PyStringNode;
-use Behat\Gherkin\Node\TableNode;
-use App\Square;
+use App\Calculator\Square;
 use PHPUnit\Framework\TestCase;
+use \Exception;
 
 /**
  * Class SquareContext
@@ -36,6 +37,7 @@ class FeatureContext implements Context
     }
 
     /**
+     * @throws Exception
      * @Then Excepted Exception
      */
     public function argumentsTooSmall(): void
