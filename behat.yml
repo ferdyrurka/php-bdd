@@ -1,5 +1,7 @@
 default:
   suites:
     calculator:
+      paths:
+        - '%paths.base%/features/calculator'
       contexts:
         - Feature\Calculator\FeatureContext
