@@ -1,11 +1,12 @@
 {
   "require": {
-    "php": "7.2.*"
+    "php": "^7.2"
   },
   "require-dev": {
     "behat/behat": "3.5.*",
     "phpunit/phpunit": "8.*.*",
-    "phpspec/phpspec": "5.1.*"
+    "phpspec/phpspec": "5.1.*",
+    "mockery/mockery": "1.2.*"
   },
   "autoload": {
     "psr-4": {
