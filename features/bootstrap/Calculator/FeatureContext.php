@@ -41,7 +41,7 @@ class FeatureContext extends TestCase implements Context
      */
     public function argumentsTooSmall(): void
     {
-        // Block from PHPUnit integration with behat
+        // Block exceptedException from PHPUnit integration with behat
         try {
             $this->square->calc();
             $this->assertFalse(false);
