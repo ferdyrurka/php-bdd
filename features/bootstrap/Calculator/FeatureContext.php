@@ -21,7 +21,7 @@ class FeatureContext implements Context
      * @param float $a
      * @Given Length is :a
      */
-    public function createNewObject(float $a): void
+    public function createSquare(float $a): void
     {
         $this->square = new Square($a);
     }
