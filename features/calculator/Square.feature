@@ -10,8 +10,8 @@ Feature: Square calculator
 
   Scenario: excepted Exception because a is 0
     Given Length is 0.00
-    Then Excepted Exception
+    Then Excepted Exception because arguments to small
 
   Scenario: excepted Exception because a is -1
     Given Length is '-1.00'
-    Then Excepted Exception
+    Then Excepted Exception because arguments to small

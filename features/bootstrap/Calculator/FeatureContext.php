@@ -2,15 +2,15 @@
 
 namespace Feature\Calculator;
 
+use App\Calculator\CalculatorException;
 use Behat\Behat\Context\Context;
 use App\Calculator\Square;
 use PHPUnit\Framework\TestCase;
-use \Exception;
 
 /**
  * Class SquareContext
  */
-class FeatureContext implements Context
+class FeatureContext extends TestCase implements Context
 {
     /**
      * @var Square
@@ -28,26 +28,25 @@ class FeatureContext implements Context
 
     /**
      * @param float $a
-     * @throws Exception
+     * @throws CalculatorException
      * @Then Excepted calculate area is :a
      */
     public function calculateArea(float $a): void
     {
-        TestCase::assertEquals($a, $this->square->calc());
+        $this->assertEquals($a, $this->square->calc());
     }
 
     /**
-     * @throws Exception
-     * @Then Excepted Exception
+     * @Then Excepted Exception because arguments to small
      */
     public function argumentsTooSmall(): void
     {
+        // Block from PHPUnit integration with behat
         try {
             $this->square->calc();
-
-            TestCase::assertTrue(false);
-        } catch (Exception $exception) {
-            TestCase::assertTrue(true);
+            $this->assertFalse(false);
+        }catch (CalculatorException $calculatorException) {
+            $this->assertTrue(true);
         }
     }
 }

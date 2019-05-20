@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace App\Calculator;
 
-use \Exception;
-
 /**
  * Class Square
  * @package App
@@ -28,12 +26,12 @@ class Square implements CalculatorInterface
 
     /**
      * @return float
-     * @throws Exception
+     * @throws CalculatorException
      */
     public function calc(): float
     {
-        if ($this->a < 0) {
-            throw new Exception('Arguments a must be greater than 0');
+        if ($this->a <= 0) {
+            throw new CalculatorException('Arguments a must be greater than 0');
         }
 
         return $this->a * $this->a;
