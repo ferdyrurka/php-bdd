@@ -8,10 +8,11 @@ Feature: Square calculator
     Given Length is 10.00
     Then Excepted calculate area is 100.0
 
-  Scenario: excepted Exception because a is 0
-    Given Length is 0.00
+  Scenario Outline: excepted Exception because a is 0
+    Given Length is <length>
     Then Excepted Exception because arguments to small
 
-  Scenario: excepted Exception because a is -1
-    Given Length is '-1.00'
-    Then Excepted Exception because arguments to small
+    Examples:
+      | length |
+      | 0.00 |
+      | '-1.00' |
