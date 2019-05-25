@@ -19,7 +19,7 @@ class FeatureContext extends TestCase implements Context
 
     /**
      * @param float $a
-     * @Given Length is :a
+     * @When Length is :a
      */
     public function createSquare(float $a): void
     {
