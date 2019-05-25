@@ -5,3 +5,8 @@ default:
         - '%paths.base%/features/calculator'
       contexts:
         - Feature\Calculator\FeatureContext
+    shop:
+      paths:
+        - '%paths.base%/features/shop'
+      contexts:
+        - Feature\Shop\Service\TaxFeatureContext
