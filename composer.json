@@ -6,7 +6,8 @@
     "behat/behat": "3.5.*",
     "phpunit/phpunit": "8.*.*",
     "phpspec/phpspec": "5.1.*",
-    "mockery/mockery": "1.2.*"
+    "mockery/mockery": "1.2.*",
+    "hmoragrega/phpspec-data-provider": "1.0.*"
   },
   "autoload": {
     "psr-4": {

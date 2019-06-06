@@ -2,3 +2,6 @@ suites:
     default:
         namespace: 'App'
         psr4_prefix: 'App'
+
+extensions:
+    HMoragrega\PhpSpec\DataProvider\DataProviderExtension: ~
