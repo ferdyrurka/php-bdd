@@ -10,8 +10,11 @@ This repository is created for test and learn Behat, PHPSpec and BDD.
 #PHPUnit (TDD)
 php vendor/bin/phpunit
 
-# Behat (BDD)
+# Behat (Story BDD)
 php vendor/bin/behat
+
+# PHPSpec (Spec BDD)
+php vendor/bin/phpspec run
 ```
 
 ## Authors
