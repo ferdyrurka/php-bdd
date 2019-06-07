@@ -16,7 +16,7 @@ class TaxServiceSpec extends ObjectBehavior
 {
     /**
      * @param TaxCountryInterface $taxCountry
-     * @throws \App\Shop\Exception\PriceLessOrEqualNilException
+     * @throws PriceLessOrEqualNilException
      */
     public function it_is_tax_calculate_ok(TaxCountryInterface $taxCountry): void
     {
