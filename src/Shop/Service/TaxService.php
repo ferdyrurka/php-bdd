@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace App\Shop\Service;
 
 use App\Shop\Exception\PriceLessOrEqualNilException;
-use App\Shop\TaxCountryInterface;
+use App\Shop\Service\TaxCountry\TaxCountryInterface;
 
 /**
  * Class TaxService

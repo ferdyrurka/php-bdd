@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace App\Shop\Service;
 
-use App\Shop\TaxCountryInterface;
+use App\Shop\Service\TaxCountry\TaxCountryInterface;
 
 /**
  * Interface TaxServiceInterface

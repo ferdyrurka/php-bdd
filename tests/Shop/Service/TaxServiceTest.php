@@ -5,7 +5,7 @@ namespace App\Test\Shop\Service;
 
 use App\Shop\Exception\PriceLessOrEqualNilException;
 use App\Shop\Service\TaxService;
-use App\Shop\TaxCountryInterface;
+use App\Shop\Service\TaxCountry\TaxCountryInterface;
 use PHPUnit\Framework\TestCase;
 use \Mockery;
 
