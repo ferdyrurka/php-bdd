@@ -30,7 +30,7 @@ class TaxServiceSpec extends ObjectBehavior
      * @dataProvider get_small_prices
      * @param float $price
      */
-    public function it_is_price_to_small($price): void
+    public function it_is_price_to_small( $price): void
     {
         $taxCountry = Mockery::mock(TaxCountryInterface::class);
         $taxCountry->shouldReceive('getTax')->once()->andReturn(23);
@@ -48,8 +48,8 @@ class TaxServiceSpec extends ObjectBehavior
     public function get_small_prices(): array
     {
         return [
-            -1.00,
-            0.00
+            [-1.00],
+            [0.00]
         ];
     }
 }
